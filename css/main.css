@@ -1,0 +1,27 @@
+
+.main-container{
+    width: 375px;  
+    margin: auto;
+    position: relative;
+}
+
+
+@media(min-width: 1115px){
+    .main-container{
+        width: 1115px;
+
+    }
+    
+
+}
+
+@media(min-width: 1115px){
+    .content{
+        display: flex;
+        padding: 50px 50px;
+        gap: 124px;
+
+    }
+        
+}
+

@@ -1,0 +1,41 @@
+
+.input{
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.input_minus{
+    width: 25px;
+    height: 100%;
+    padding: 24px 5px;
+}
+
+.input_minus:hover{
+    cursor: pointer;
+}
+
+.input_number{
+    width: 100%;
+    border: none;
+    background-color: hsl(223, 64%, 98%);
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+    outline: none;
+
+}
+
+.input_plus{
+    width: 25px;
+    height: 100%;
+    padding: 19px 3px; 
+}
+
+.input_plus:hover{
+    cursor: pointer;
+}

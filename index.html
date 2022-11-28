@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Brava </title>
+
+    <link rel = "icon" href = "img/logo/logo_icon.ico">
+
+    <!-- Estilos -->
+    <link rel = "stylesheet" href = "css/default.css">
+    <link rel = "stylesheet" href = "css/main.css">
+    <link rel = "stylesheet" href = "css/header.css">
+    <link rel = "stylesheet" href = "css/modal-navbar.css">
+    <link rel = "stylesheet" href = "css/navbar.css">
+    <link rel = "stylesheet" href = "css/gallery.css">
+    <link rel = "stylesheet" href = "css/details.css">
+    <link rel = "stylesheet" href = "css/input.css">
+    <link rel = "stylesheet" href = "css/modal-cart.css">
+    <link rel = "stylesheet" href = "css/modal-gallery.css">
+      
+  </head>
+
+  <body>
+
+    <main class = "main-container">
+
+      <header class = "header">
+
+        <!-- Menu de navegação  -->
+        <div class = "header_navigation">
+
+          <!-- Icon menu mobile  -->
+          <img class = "header_menu" src = "img/icon-menu.svg">
+
+          <!-- Logo -->
+          <img class = "header_logo" src = "img/logo/logo_L.png" alt = "Brava">
+
+          <!-- Menu Desktop -->
+          <nav class = "navbar">
+
+            <ul class = "navbar-itens">
+              <li> <a class = "navbar-link" href = "#"> Home </a> </li>
+              <li> <a class = "navbar-link" href = "#"> Coleções  </a> </li> 
+              <li> <a class = "navbar-link" href = "#"> Depoiment </a> </li>  
+              <li> <a class = "navbar-link" href = "#"> Contatos </a> </li> 
+            </ul>
+
+          </nav>
+
+        </div>
+                      
+        <!-- Menu de navegação Mobile -->
+        <div class = "modal-navbar_background">
+               
+          <nav class = "modal-navbar">
+
+            <img src = "img/icon-close.svg" class = "modal-navbar_close-icon">
+
+            <ul class = "modal-navbar-itens">
+              <li> <a class = "modal-navbar-link" href = "#"> Home </a> </li>
+              <li> <a class = "modal-navbar-link" href = "#"> Coleções  </a> </li> 
+              <li> <a class = "modal-navbar-link" href = "#"> Depoiment </a> </li>  
+              <li> <a class = "modal-navbar-link" href = "#"> Contatos </a> </li> 
+            </ul>
+
+          </nav>
+
+        </div>
+
+        <!-- Carrinho de compras-->
+        <div class = "header_cart-avatar">
+
+          <div class = "header_cart">
+            <div class = "header_cart-notification"> 0 </div>
+            <img src = "img/icon-cart.svg">
+          </div>
+
+          <img class = "header-avatar" src = "img/logo/logo_avatar_l.png">
+
+        </div>
+
+      </header>
+        
+      <!-- Galeria -->
+      <section class = "content">
+
+        <!-- Galeria grande -->
+        <article class = "gallery">
+
+          <div class = "gallery_img-container">
+            <img src = "img/icon-previous.svg" class = "gallery_btn_previous" alt ="previus">
+            <img src = "img/image-product-1.jpg" class = "gallery_img" alt = "Produto">
+            <img src = "img/icon-next.svg" class = "gallery_btn_next" alt ="next">
+          </div>
+
+          <!-- Galeria pequena -->
+          <div class = "gallery_thumbnails">
+            <img src = "img/image-product-1.jpg" class = "gallery_thumbnail" id ="1" alt = "thumbnail">
+            <img src = "img/image-product-2.jpg" class = "gallery_thumbnail" id ="2" alt = "thumbnail">
+            <img src = "img/image-product-3.jpg" class = "gallery_thumbnail" id ="3" alt = "thumbnail">
+            <img src = "img/image-product-4.jpg" class = "gallery_thumbnail" id ="4" alt = "thumbnail">
+          </div>
+
+        </article>
+
+        <!-- Descrição do produto-->
+        <article class = "details">
+
+          <h2 class = "details_company"> Marca do produto </h2>
+          <h2 class = "details_title"> Nome do produto Marca do produto </h2>
+          <p class = "details_description"> 
+            Descrição do produto Descriçãodo produtoDescrição do produto Descrição doproduto 
+            Descrição doproduto Descrição do produto 
+          </p>
+
+          <!-- Preço do produto -->
+          <div class = "details_prices">
+            <p class = "details_now"> $00.00 <span class = "details_discount"> 50% </span > </p>
+            <p class = "details_before"> $00.00 </p>
+          </div>
+
+          <!-- Botões mais e menos  -->
+          <div class = "details_product-quantity">
+
+            <div class = "input">
+              <img src = "img/icon-minus.svg" class = "input_minus" alt = "minus">
+              <input type = "text" value = "0" class = "input_number">
+              <img src = "img/icon-plus.svg" class = "input_plus" alt = "plus">
+            </div>
+
+            <button class = "details_button"> <img src = "img/icon-cart-white.svg"> Add no carrinho  </button>
+
+          </div>
+
+        </article>
+
+      </section>
+
+      <!-- Tela do carrinho de compra -->
+      <div class ="modal-cart">
+
+        <p class = "modal-cart_title"> Carrinho </p>
+
+        <div class = "modal-cart_chekout-container">
+
+          <div class = "modal-cart_details-container">
+
+            <img src = "img/image-product-1-thumbnail.jpg" class = "modal-cart_image">
+
+              <div>
+                <p class = "modal-cart_product"> Nome do produto </p>
+                <p class = "modal-cart_price"> $00 x 0 = <span> $0.0 </span> </p>
+              </div>
+
+              <img src = "img/icon-delete.svg" class = "modal-cart_delete" alt = "delete">
+
+          </div>
+
+          <button class = "model-cart_btn_chekout"> Comprar </button>
+
+        </div>
+
+      </div>
+      
+      <!-- Visualização da galeria desktop ampliada -->
+      <div class = "modal-gallery">
+        
+        <article class = "modal-gallery_background">
+
+          <div class = "modal-gallery_close-container">
+            <img src = "img/icon-close.svg" class = "modal-gallery-img_close" alt ="icon close">
+          </div>
+
+          <div class = "modal-gallery_img-container">
+            <img src = "img/icon-previous.svg" class = "modal-gallery_btn_previous" alt ="previus">
+            <img src = "img/image-product-1.jpg" class = "modal_gallery_img" alt = "Produto ampliado">
+            <img src = "img/icon-next.svg" class = "modal-gallery_btn_next" alt ="next">
+          </div>
+
+
+          <!-- Galeria pequena -->
+          <div class = "modal_gallery_thumbnails">
+            <img src = "img/image-product-1.jpg" class = "modal-gallery_thumbnail" id ="m1" alt = "thumbnail">
+            <img src = "img/image-product-2.jpg" class = "modal-gallery_thumbnail" id ="m2" alt = "thumbnail">
+            <img src = "img/image-product-3.jpg" class = "modal-gallery_thumbnail" id ="m3" alt = "thumbnail">
+            <img src = "img/image-product-4.jpg" class = "modal-gallery_thumbnail" id ="m4" alt = "thumbnail">
+          </div>
+                  
+        </article>
+
+      </div>
+
+    </main>
+    <footer>
+      
+    </footer>
+
+    <script src = "js/btn_add.js"> </script>
+    <script src = "js/menu-mobile.js"> </script>
+    <script src = "js/gallery.js"> </script>
+
+  </body>
+
+</html>
